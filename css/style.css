@@ -1,0 +1,611 @@
+@font-face{
+	font-family: "NEOTERIC";
+	src: url("../fonts/NEOTERIC.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "FZLTCXHJW";                                                                                    
+	src: url("../fonts/FZLTCXHJW.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	font-size: 62.5%;
+	font-family: "微软雅黑";
+}
+*, *:after, *:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+
+/*homePageone*/
+
+.homePage{
+	width: 100%;
+	height: 100%;
+}
+.homePageone{
+	background: url(../images/home-one.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.homePageone p i{
+	font-family: "NEOTERIC";
+	font-style: normal;
+	text-align: center;
+	color: #fff;
+	font-size: 6.4rem;
+	line-height: 8rem;
+	position: relative;
+	display: block;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.homePageonedown{
+	width: 6.4rem;
+	height: 4rem;
+	margin: 2.4rem auto 0;
+}
+.homePageone img{
+	width: 6.4rem;
+	height: 4rem;
+}
+@media (min-height:1300px) {
+.homePageoneUp{
+	display: block;
+	width: 100%;
+	height: 85%;
+}
+}
+@media (max-height:1300px) {
+.homePageoneUp{
+	display: block;
+	width: 100%;
+	height: 70%;
+}
+}
+
+
+/*homePagetwo*/
+
+.homePagetwo{
+	padding: 0 6%;
+}
+.homePagetwo .homePagetwoImg{
+	width: 100%;
+	margin-top: 15%;
+}
+.homePagetwodet{
+	margin-top: 3.2rem; 
+	width: 100%;
+	height: 62.4rem;
+	background: #fff;
+	border: #555 solid 0.1rem;
+	border-radius: 1.2rem;
+}
+.homePagetwoBg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.homePagetwodet h1{
+	position: relative;
+	text-align: center;
+	margin: 2rem 0;
+	font-size: 4.8rem;
+	font-weight: bolder;
+	border-left: #00a0e9 solid 0.5rem;
+}
+.homePagetwodet p{
+	display: block;
+	position: relative;
+	width: 88%;
+	margin: 0 6%;
+	padding-top: 2.4rem;
+	font-size: 3.2rem;
+	line-height: 4rem;
+	border-top: #555 solid 0.1rem;
+}
+ 
+/*homePagetwo王*/
+.homePagetwo{
+	padding: 0 6%;
+}
+.homePagetwoBg{
+	width: 100%;
+	height: 100%;
+}
+@media (min-height:1300px) {
+.homePagetwoImg{
+	width: 100%;
+	margin-top: 15%;
+}
+.homePagetwodet{
+	position: relative;
+	margin-top: 3.2rem; 
+	width: 100%;
+	height: 62.4rem;
+	background: #fff;
+	border: #555 solid 0.1rem;
+	border-radius: 1.2rem;
+}
+
+.homePagetwodet h1{
+	position: relative;
+	text-align: center;
+	margin: 2rem 0;
+	font-size: 4.8rem;
+	font-weight: bolder;
+	border-left: #00a0e9 solid 0.5rem;
+}
+.homePagetwodet p{
+	display: block;
+	position: relative;
+	width: 88%;
+	margin: 0 6%;
+	padding-top: 2.4rem;
+	font-size: 3.2rem;
+	line-height: 4rem;
+	border-top: #555 solid 0.1rem;
+}
+}
+
+@media (max-height:1300px) {
+.homePagetwoImg{
+	width: 100%;
+	margin-top: 5%;
+}
+.homePagetwodet{
+	margin-top: 0.8rem; 
+	padding: 2%;
+	width: 100%;
+	height: auto;
+	background: #fff;
+	border: #555 solid 0.1rem;
+	border-radius: 1.2rem;
+}
+.homePagetwodet h1{
+	position: relative;
+	text-align: center;
+	margin: 0 0 2rem;
+	font-size: 4.8rem;
+	font-weight: bolder;
+	border-left: #00a0e9 solid 0.5rem;
+}
+.homePagetwodet p{
+	display: block;
+	position: relative;
+	width: 88%;
+	margin: 0 6%;
+	padding-top: 0.8rem;
+	font-size: 3rem;
+	line-height: 4rem;
+	border-top: #555 solid 0.1rem;
+}
+}
+
+
+/*homePagethree*/
+.homePagethree{
+
+}
+.homePagethree ul{
+	width: 100%;
+	height: 65%;
+	padding-top: 15%;
+}
+.homePagethree ul li{
+	width: 42%;
+	height: auto;
+	background: #fff;
+	border-radius: 1.2rem;
+	float: left;
+	margin: 4%;
+	padding: 3%;
+	-webkit-box-shadow:4px 4px 15px rgba(0, 0, 0, 0.5);
+   	-moz-box-shadow:4px 4px 15px rgba(0, 0, 0, 0.5); 
+    box-shadow:4px 4px 15px rgba(0, 0, 0, 0.5);
+}
+.homePagethree ul li span{
+	display: block;
+	color: #000;
+	font-size: 4rem;
+	line-height: 4.8rem;
+	text-align: center;
+}
+.homePagethree ul li p{
+	color: #000;
+	font-size: 2.6rem;
+	line-height: 4.8rem;
+	text-align: center;
+}
+.homePagethree ul li img{
+	width: 100%;
+}
+
+
+/***********谢4*************/
+.p4_content{
+	width: 100%;
+	height:130rem;
+}
+.null{
+	width:100%;
+	height:5rem;
+	display:block;
+}
+.p4_header{
+	width:34.4rem;
+	height:8rem;
+	line-height:8rem;
+	display: block;
+	margin:0 auto;
+	font-size: 4rem;
+	font-weight: bolder;
+	text-align: center;
+}
+.p4_time1{
+	width:14.4rem;
+	height:6rem;
+	line-height: 4rem;
+	display:block;
+	margin:1.6rem auto 0 auto;
+	font-size: 3rem;
+	font-weight: bolder;
+	text-align: center;
+}
+.p4_time1_list1{
+	width: 100%;
+	height:10.8rem;
+	display:block;
+	margin-top: 2.4rem;
+	margin:0 auto;
+}
+.p4_list1_child{
+	width:82%;
+	height:10.8rem;
+	padding-left:8rem;
+	margin:0 auto;
+	} 
+.num{
+	width:4%;
+	height:2rem;
+	float:left;
+	font-size: 3rem;
+	font-weight: bolder;
+	margin-left: 12rem;
+}
+.p4_word{
+	font-size: 3rem;
+	font-weight: bolder;
+	text-align: center;
+}
+.p4_time1_list2{
+	width: 100%;
+	height:7.4rem;
+	display:block;
+	margin:3.6rem auto 0 auto;
+}
+.p4_list2_child{
+	width:82%;
+	height:7.4rem;
+	padding-left:8rem;
+	margin:0 auto;
+}
+.p4_time1_list3{
+	width:100%;
+	height:4.8rem;
+	display:block;
+	margin:3.6rem auto 0 auto;
+}
+.p4_list3_child{
+	width:60%;
+	height:4.8rem;
+	margin:0 auto;
+	text-align: center;
+}
+.p4_words{
+	font-size: 2rem;
+	font-weight: normal;
+	text-align: center;
+}
+.p4_time2{
+	width:20.6rem;
+	height:4rem;
+	line-height: 4rem;
+	display:block;
+	margin:4.8rem auto 0 auto;
+	font-size: 3rem;
+	font-weight: bolder;
+	text-align: center;
+}
+.p4_time2_list4{
+	width:100%;
+	height:14.8rem;
+	display:block;
+	margin:2.4rem auto 0 auto;
+}
+.p4_list4_child{
+	width:82%;
+	height:10.8rem;
+	margin:0 auto;
+	padding-left:8rem;
+}
+.p4_time2_list5{
+	width:100%;
+	height:17.8rem;
+	display:block;
+	margin:2.4rem auto 0 auto;
+}
+.p4_list5_child{
+	width:82%;
+	height:40.8rem;
+	margin:0 auto;
+	padding-left:8rem;
+}
+/*********谢5*******/
+.p5_wrapper{
+	width:80%;
+	height:93rem;
+	background:url(../images/background.png) no-repeat center;
+	background-size: 100% 100%;
+	display:block;
+	margin:12% auto;
+}
+.p5_header{
+	width:100%;
+	height:17rem;
+	display:block;
+	line-height: 14.5rem;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 4.8rem;
+}
+.p5_list1{
+	width:60rem;
+	height:20rem;
+	line-height: 3.5rem;
+	display:block;
+	margin:5rem auto 0 auto;
+	text-align: left;
+	font-size: 3rem;
+	font-weight: bolder;
+}
+.p5_null{
+	width:100%;
+	height:7rem;
+	display:block;
+}
+.p5_null2{
+	width: 100%;
+	height: 3rem;
+	display: block;
+}
+.p5_list2{
+	width:40rem;
+	height:20rem;
+	display:block;
+	margin:0 auto;
+	text-align: center;
+	font-weight: bolder;
+	line-height: 3.5rem;
+	font-size: 3rem;
+	padding-top:5rem;
+}
+.p5_bw{
+	text-align: center;
+	font-weight: bolder;
+	font-size: 4rem;
+}
+.p5_button{
+	width:35rem;
+	height:10rem;
+	line-height: 10rem;
+	display:block;
+	margin:3rem auto 0 auto;
+	background:#f29b76;
+	text-align: center;
+	color:#fff;
+	font-size: 3rem;
+	font-weight: normal;
+	border-radius: 3rem;
+	text-decoration: none;
+}
+/************诗追加*************/
+.homePagetwodet h1 span{
+	font-size:3.3rem;
+	font-weight:bolder;
+}
+.homePagetwodet a{
+	display:block;
+	text-align:center;
+	background-color:#f29b76;
+	border-radius:3rem;
+	font-size:3rem;
+	width:35rem;
+	height:10rem;
+	line-height:10rem;
+	margin:3rem auto;
+}
+
+/*************佳homePageten***********/
+.homePageten{
+	padding: 0 6%;
+}
+.fl{
+	float: left;
+}
+.homePageten .content{
+	width: 77.6rem;
+	height: 90.4rem;
+	margin: 0 auto;
+	padding-top: 12rem;
+}
+.homePageten .title{
+	width: 77rem;
+	height: 16rem;
+	text-align: center;
+	margin: 0 auto;
+	color: #000;
+	font-weight: bold;
+	border-bottom: 0.2rem #CBC5C3 solid; 
+}
+.homePageten .title_wrap{
+	width:64.5rem;
+	height: 16rem;
+	margin:0 auto; 
+}
+.title .top_left{
+	font-size: 11.6rem;
+	/* margin-left: 7.5rem; */
+}
+.title .top_right{
+	margin: 0.8rem 0 1.4rem 0.8rem;
+	font-size: 3.2rem;
+}
+.title .btm_right{
+	margin-left: 0.8rem;
+	font-size: 6.4rem;
+}
+.homePageten .slogans{
+	width: 77.6rem;
+	height: 24.8rem;
+	margin-top: 7.2rem; 
+	font-size: 3.3rem;
+	color: #000;
+}
+.homePageten .slogans .dot{
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background-color: #000;
+	vertical-align: center;
+}
+.slogans .s{
+	position: relative;
+	margin-left: 1em;
+}
+.slogans .dot{
+	position: relative;
+	top: 2rem;
+	margin-right: 0.5rem;
+}
+.slogans p{
+	margin-left: 1.7rem;
+}
+.slogans .margin_top{
+	margin-top: 5.6rem;
+}
+.homePageten .btns{
+	width: 40rem;
+	height: 10rem;
+	margin: 13rem auto 0 auto;
+}
+.btns .btn{
+	width: 38rem;
+	height: 10rem;
+	line-height: 10rem;
+	font-size: 4rem;
+	background-color: #F29B76;
+	color: #fff;
+	border-radius: 3rem;
+	text-align: center;
+	position: relative;
+}
+.btns .btn2{
+	margin-top: 4.5rem;
+}
+.btns a{
+	display: block;
+}
+.btns img{
+	position: absolute;
+	margin-left: 5rem;
+    margin-top: 3rem;
+    display: block;
+}
+/*************佳11**************/
+.homePageeleven{
+	padding: 0 6%;
+}
+.p11_null{
+	height:7rem;
+}
+.homePageelevendet{
+	width: 100%;
+	height: 87rem;
+	background: #fff;
+	border-radius: 1.2rem;
+	margin-top: 1rem;
+}
+/* .homePageeleven .border{
+	width:80%;
+	height: 20rem;
+	border-top: #CBC5C3 solid 0.1rem;
+	margin:0 auto;
+} */
+.homePageelevenImg{
+	display: block;
+    margin: 0 auto;
+}
+.homePageelevendet .cert{
+	padding-left: 27%;
+	position: relative;
+	text-align: center;
+	margin: 2rem auto 0 auto;
+    line-height: 8rem;
+	margin-top: 2rem;
+	font-size: 4.8rem;
+	font-weight: bolder;
+	border-left: #00a0e9 solid 0.5rem;
+}
+.homePageelevendet p{
+	text-indent: 4rem;
+	display: block;
+	position: relative;
+	width: 88%;
+	margin: 0 6%;
+	padding-top: 1rem;
+	font-size: 2.8rem;
+	line-height: 3.4rem;
+}
+.homePageeleven .p5_button{
+	width: 30rem;
+    height: 8rem;
+    line-height: 8rem;
+    margin: 2rem auto 0 auto;
+}
+.homePageeleven h2{
+	font-size: 3.3rem;
+	text-align: center;
+	margin: 2rem 0;
+}
+.homePageeleven .logos{
+	width: 20rem;
+	margin: 0 auto;
+}
+.homePageeleven .logos .weixin,.weibo{ 
+	display: block;
+	float: left;
+	margin-left: 3rem;
+}
+.homePageeleven .footer{
+	width: 100%;
+	border-top: #CBC5C3 solid 0.1rem;
+	text-align: center;
+	margin-top: 3rem;
+}
+.homePageeleven .footer p{
+	line-height: 3rem;
+	font-size: 2rem;
+}
+
