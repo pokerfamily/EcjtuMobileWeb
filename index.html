@@ -10,12 +10,13 @@
 	<script src="js/jquery-1.8.3.min.js"></script>
 	<script src="js/jquery.fullPage.min.js"></script>
 	<script>
-		$(function(){
+ 		$(function(){
 			$('#dowebok').fullpage({
 				sectionsColor: ['#e7e1df', '#e7e1df', '#e7e1df', '#e7e1df','#e7e1df','#e7e1df','#e7e1df','#e7e1df','#e7e1df','#e7e1df']
 			});
 		});
-		//平台、设备和操作系统 
+
+        //平台、设备和操作系统 
         var system = { 
             win: false, 
             mac: false, 
@@ -23,18 +24,75 @@
             ipad:false 
         }; 
         //检测平台 
-        var p = navigator.platform; 
-        system.win = p.indexOf("Win") == 0; 
-        system.mac = p.indexOf("Mac") == 0; 
-        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0); 
-        system.ipad = (navigator.userAgent.match(/iPad/i) != null)?true:false; 
+        // var p = navigator.platform; 
+        // system.win = p.indexOf("Win") == 0; 
+        // system.mac = p.indexOf("Mac") == 0; 
+        // system.x11 = (p == "X11") || (p.indexOf("Linux") == 0); 
+        // system.ipad = (navigator.userAgent.match(/iPad/i) != null)?true:false; 
         //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面 
-        if (system.win || system.mac || system.xll||system.ipad) { 
- 			window.location.href = "http://xs.ecjtu.org";//电脑版
-        } else { 
+    //     if (system.win || system.mac || system.xll||system.ipad) { 
+ 			// window.location.href = "http://xs.ecjtu.org";
+    //     } else { 
  
-            window.location.href = "http://ecjtu.tiger.mopaas.com"; //手机版
-        } 
+    //         window.location.href = "http://ecjtu.tiger.mopaas.com"; 
+    //     } 
+ 
+
+    	function showdiv_1() {
+        	var strHref_1 = document.getElementById("strHref_1");
+            document.getElementById("homePageelevendetChgImg").style.display = "block";
+            document.getElementById("homePageelevendetChg").style.display = "none";
+            strHref_1.href = "javascript:hidediv_1();";
+        }
+        function hidediv_1() {
+        	var strHref_1 = document.getElementById("strHref_1");
+            document.getElementById("homePageelevendetChgImg").style.display = "none";
+            document.getElementById("homePageelevendetChg").style.display = "block";
+            strHref_1.href = "javascript:showdiv_1();";
+        }
+ 
+ 		function showdiv_2() {
+        	var strHref_2 = document.getElementById("strHref_2");
+            document.getElementById("homePagethreeChgImg").style.display = "block";
+            document.getElementById("homePagethreeChg3Off").style.display = "block";
+            document.getElementById("homePagethreeChg1").style.display = "none";
+            document.getElementById("homePagethreeChg2").style.display = "none";
+            document.getElementById("homePagethreeChg3").style.display = "none";
+            document.getElementById("homePagethreeChg4").style.display = "none";
+            strHref_2.href = "javascript:hidediv_2();";
+        }
+        function hidediv_2() {
+        	var strHref_2 = document.getElementById("strHref_2");
+            document.getElementById("homePagethreeChgImg").style.display = "none";
+            document.getElementById("homePagethreeChg3Off").style.display = "none";
+            document.getElementById("homePagethreeChg1").style.display = "block";
+            document.getElementById("homePagethreeChg2").style.display = "block";
+            document.getElementById("homePagethreeChg3").style.display = "block";
+            document.getElementById("homePagethreeChg4").style.display = "block";
+            strHref_2.href = "javascript:showdiv_2();";
+        }
+
+        function showdiv_3() {
+        	var strHref_3 = document.getElementById("strHref_3");
+            document.getElementById("homePagethreeChgImg").style.display = "block";
+            document.getElementById("homePagethreeChg4Off").style.display = "block";
+            document.getElementById("homePagethreeChg1").style.display = "none";
+            document.getElementById("homePagethreeChg2").style.display = "none";
+            document.getElementById("homePagethreeChg3").style.display = "none";
+            document.getElementById("homePagethreeChg4").style.display = "none";
+            strHref_3.href = "javascript:hidediv_3();";
+        }
+        function hidediv_3() {
+        	var strHref_3 = document.getElementById("strHref_3");
+            document.getElementById("homePagethreeChgImg").style.display = "none";
+            document.getElementById("homePagethreeChg4Off").style.display = "none";
+            document.getElementById("homePagethreeChg1").style.display = "block";
+            document.getElementById("homePagethreeChg2").style.display = "block";
+            document.getElementById("homePagethreeChg3").style.display = "block";
+            document.getElementById("homePagethreeChg4").style.display = "block";
+            strHref_3.href = "javascript:showdiv_3();";
+        }
+
 	</script>
 </head>
 <body>
@@ -50,10 +108,9 @@
 		</div>
 		<div class="section">
 			<div class="homePage homePagetwo">
-				<img class="homePagetwoImg" src="images/home-two-img.png">
+				<img class="homePagetwoImg" src="images/home-two-img.jpg">
 				<div class="homePagetwodet">
-					<!-- <img  class="homePagetwoBg" src="images/home-two-bg.png"> -->
-					<h1>欢迎来到华东交通大学</h1>
+				<h1>欢迎来到华东交通大学</h1>
 					<p><font size="10">华</font>东交通大学坐落于江西南昌，起源于1971年，由上海交通大学、同济大学的部分专业调入原上海铁道学院组建而成。<br>
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交大不仅有着古树与湖畔笼罩着的美丽校园，令其他高校十分羡慕的就业率，也拥有不输于其他高校的设备与资源，还有很多帅气幽默的学长和美丽动人的学姐，当然还有正在看着这段文字的你——学长学姐们虽然不情愿的在命运的年轮上刻上一圈，但终于迎来了你。<br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎你选择华东交通大学来度过你人生中最难忘的四年，现在，花椒，就是你！</p>
@@ -63,27 +120,53 @@
 		<div class="section">
 			<div class="homePage homePagethree">
 				<ul>
-					<li><a href="http://xs.ecjtu.org/scenery.html">
-						<span>交大校园</span>
-						<p>ECJT University Campus</p>
-						<img src="images/home-three-img1.png">
-					</a></li>
-					<li><a href="http://xs.ecjtu.org/Dormitory.html">
-						<span>学生宿舍</span>
-						<p>Students' Dormitory</p>
-						<img src="images/home-three-img2.png">
-					</a></li>
-					<li><a href="#">
-						<span>学院介绍</span>
-						<p>College Introduction</p>
-						<img src="images/home-three-img3.png">
-					</a></li>
-					<li><a href="#">
-						<span>专业介绍</span>
-						<p>Profession Introduction</p>
-						<img src="images/home-three-img4.png">
-					</a></li>
+					<li>
+						<a href="http://xs.ecjtu.org/scenery.html">
+							<div class="homePagethreeChg" id="homePagethreeChg1">
+								<span>交大校园</span>
+								<p>ECJT University Campus</p>
+								<img src="images/home-three-img1.jpg">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://xs.ecjtu.org/Dormitory.html">
+							<div class="homePagethreeChg" id="homePagethreeChg2">
+								<span>学生宿舍</span>
+								<p>Students' Dormitory</p>
+								<img src="images/home-three-img2.jpg">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:showdiv_2();" id="strHref_2">
+							<div class="homePagethreeChg" id="homePagethreeChg3">
+								<span>学院介绍</span>
+								<p>College Introduction</p>
+								<img src="images/home-three-img3.jpg">
+							</div>
+							<div class="homePagethreeChgOff" id="homePagethreeChg3Off">
+								close
+							</div>	
+						</a>
+					</li>
+					<li>
+						<a href="javascript:showdiv_3();" id="strHref_3">
+							<div class="homePagethreeChg" id="homePagethreeChg4">
+								<span>专业介绍</span>
+								<p>Profession Introduction</p>
+								<img src="images/home-three-img4.jpg">
+							</div>
+							<div class="homePagethreeChgOff" id="homePagethreeChg4Off">
+								close
+							</div>
+						</a>
+					</li>
 				</ul>
+				<div id="homePagethreeChgImg">
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关注微信“花椒校园通”（ecjtuxyt），回复你所在的学院或者专业就有相关介绍啦！</p>
+					<img src="images/xyt_erweima.jpg">
+				</div>
 			</div>
 		</div>
 		<div class="section">
@@ -170,7 +253,7 @@
 		</div>
 		<div class="section">
 			<div class="homePage homePagetwo">
-				<img class="homePagetwoImg" src="images/7.png">
+				<img class="homePagetwoImg" src="images/7.jpg">
 				<div class="homePagetwodet">
 					<h1>学习指南</h1>
 					<p><span style="font-weight:bold">大学和中学在学习上的最大区别</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中学阶段，我们一般只学习十门左右的课程，而且有两年时间都把精力砸到高考科目上了，老师主要讲述一般基础性的知识。而大学四年需要学习的课程在40门以上，每一个学期学习的课程都不相同，内容多，学习任务远比中学重得多......</p>
@@ -180,7 +263,7 @@
 		</div>
 		<div class="section">
 			<div class="homePage homePagetwo">
-				<img class="homePagetwoImg" src="images/8.png">
+				<img class="homePagetwoImg" src="images/8.jpg">
 					<div class="homePagetwodet">
 						<h1>生活指南</h1>
 						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;南昌。简称洪，又称洪城 、英雄城，是江西省省会，江西省政治、经济、文化、科技和交通中心，长江中游城市群重要城市，鄱阳湖生态经济区核心城市，中国重要的综合交通枢纽和现代制造业基地。南昌地处江西省中部偏北，赣州、抚州下游，濒临中国第一淡水湖鄱阳湖西南岸，自古就有“粤户闽庭，吴头楚尾”之称。
@@ -193,30 +276,38 @@
 				<ul>
 					<li>
 						<a href="http://xs.ecjtu.org/scenery-1.html">
-						<span>南昌美景</span>
-						<p>Beautiful scenery</p>
-						<img src="images/9_1.png">
+							<div class="homePagethreeChg">
+								<span>南昌美景</span>
+								<p>Beautiful scenery</p>
+								<img src="images/9_1.jpg">
+							</div>
 						</a>
 					</li>
 					<li>
 						<a href="http://xs.ecjtu.org/right-sidebar.html">
-						<span>公交出行</span>
-						<p>Bus travel</p>
-						<img src="images/9_2.png">
+							<div class="homePagethreeChg">
+								<span>公交出行</span>
+								<p>Bus travel</p>
+								<img src="images/9_2.jpg">
+							</div>
 						</a>
 					</li>
 					<li>
 						<a href="http://xs.ecjtu.org/food.html">
-						<span>南昌美食</span>
-						<p>Delicious foods</p>
-						<img src="images/9_3.png">
+							<div class="homePagethreeChg">
+								<span>南昌美食</span>
+								<p>Delicious foods</p>
+								<img src="images/9_3.jpg">
+							</div>
 						</a>
 					</li>
 					<li>
 						<a href="http://xs.ecjtu.org/left-sidebar.html">
-						<span>学校周边</span>
-						<p>School peripheral</p>
-						<img src="images/9_4.png">
+							<div class="homePagethreeChg">
+								<span>学校周边</span>
+								<p>School peripheral</p>
+								<img src="images/9_4.jpg">
+							</div>
 						</a>
 					</li>
 				</ul>
@@ -263,16 +354,20 @@
 			<div class="homePage homePageeleven">
 				<div class="p11_null"></div>
 				<div class="homePageelevendet">
-					<!-- <img  class="homePagetwoBg" src="images/home-two-bg.png">  -->
 					<span class="cert">计算机紧急响应组</span>
-					<img class="homePageelevenImg" src="images/cert.png" style="width=1rem;height=2rem;">
-					<p> 计算机紧急响应组（Computer Emergency Response Team 简称CERT）成立于2005年9月1日，是隶属于华东交通大学现代教育技术中心网络信息部，从事网络安全、软件研发、网站建设、硬件维修等技术研究的公益性技术团队.同时也是华东交通大学规模最大、最具亲和力的计算机社团。</p>
-   					<p>旗下拥有成熟的技术交流社区——蓝盾社区（bbs.ecjtu.org）以及自己的创意智慧和艺术设计团队。</p>
-      				<a class="p5_button" href="http://hr.ecjtu.org/hr/">加入我们</a>
+					<div id="homePageelevendetChg">
+						<img class="homePageelevenImg" src="images/cert.jpg" style="width=0.5rem;height=1.5rem;">
+						<p> 计算机紧急响应组（Computer Emergency Response Team 简称CERT）成立于2005年9月1日，是隶属于华东交通大学现代教育技术中心网络信息部，从事网络安全、软件研发、网站建设、硬件维修等技术研究的公益性技术团队.同时也是华东交通大学规模最大、最具亲和力的计算机社团。</p>
+	   					<p>旗下拥有成熟的技术交流社区——蓝盾社区（bbs.ecjtu.org）以及自己的创意智慧和艺术设计团队。</p>
+	      				<a class="p5_button" href="http://hr.ecjtu.org/hr/">加入我们</a>
+					</div>
       				<h2>关注我们</h2>
       				<div class="logos">
-      					<a href="" class="weixin"><img style="width:5.5rem;height:5.5rem;" src="images/icon_weixin.png"></a>
+      					<a href="javascript:showdiv_1();" id="strHref_1" class="weixin"><img style="width:5.5rem;height:5.5rem;" src="images/icon_weixin.png"></a>
       					<a href="http://weibo.com/ecjtuwb" class="weibo"><img style="width:5.5rem;height:5.5rem;" src="images/icon_weibo.png"></a>
+      				</div>
+      				<div id="homePageelevendetChgImg">
+      					<img src="images/xyt_erweima.jpg">
       				</div>
 				</div>
 				<div class="footer">
